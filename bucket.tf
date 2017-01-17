@@ -1,6 +1,6 @@
 
 resource "aws_s3_bucket" "b-state" {
-    bucket = "tf-remote-state-${var.bucket-ID}" // MUST BE A Unique name
+    bucket = "tf-remote-state-${var.bucket_ID}" // MUST BE A Unique name
     acl = "private"
     versioning {
       enabled = true
@@ -16,7 +16,7 @@ resource "aws_s3_bucket" "b-state" {
 }
 
 resource "aws_s3_bucket" "b-log" {
-    bucket = "tf-remote-state-logs-${var.bucket-ID}"
+    bucket = "tf-remote-state-logs-${var.bucket_ID}"
     acl = "log-delivery-write"
     versioning {
       enabled = true

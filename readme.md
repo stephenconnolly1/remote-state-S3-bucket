@@ -10,7 +10,7 @@ You will need to provide a `terraform.tfvars` file in the folder that defines va
 
     access_key = "<KEY_ID>"
     secret_key = "<SECRET_KEY>"
-    bucket-ID  = "<YOUR-UNIQUE-ID>"
+    bucket_ID  = "<YOUR-UNIQUE-ID>"
 
 ### To create the bucket
 
@@ -20,7 +20,7 @@ Open a command prompt and run
 
 Then once you are happy with the plan run
 
-    terraform plan
+    terraform apply
 
 Make a note of the output, as this contains the name of the bucket ID you will need
 to pass into the configuration of your main terraform project so that it can store state in the S3 bucket.

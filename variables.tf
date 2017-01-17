@@ -7,7 +7,7 @@ variable "secret_key" {}
 variable "region" {
   default = "us-east-1"
 }
-variable "bucket-ID" {
+variable "bucket_ID" {
   description = "A unique S3 bucket ID (mandatory)"
 }
 
